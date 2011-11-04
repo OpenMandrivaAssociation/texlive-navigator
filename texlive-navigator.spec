@@ -1,3 +1,9 @@
+# revision 21194
+# category Package
+# catalog-ctan /macros/generic/navigator
+# catalog-date 2011-01-26 01:17:29 +0100
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-navigator
 Version:	1.0
 Release:	1
@@ -47,6 +53,7 @@ requires texapi and yax, both version at least 1.03.
 %doc %{_texmfdistdir}/doc/generic/navigator/README
 %doc %{_texmfdistdir}/doc/generic/navigator/navigator-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/navigator/navigator-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ requires texapi and yax, both version at least 1.03.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
