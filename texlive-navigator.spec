@@ -1,12 +1,12 @@
-# revision 21194
+# revision 29067
 # category Package
 # catalog-ctan /macros/generic/navigator
-# catalog-date 2011-01-26 01:17:29 +0100
+# catalog-date 2012-11-14 17:56:09 +0100
 # catalog-license lppl
 # catalog-version 1.0
 Name:		texlive-navigator
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	PDF features across formats and engines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/navigator
@@ -54,17 +54,3 @@ requires texapi and yax, both version at least 1.03.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 754250
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 719103
-- texlive-navigator
-- texlive-navigator
-- texlive-navigator
-- texlive-navigator
-
