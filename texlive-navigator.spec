@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 1.0
 Name:		texlive-navigator
-Version:	1.0
-Release:	11
+Version:	1.1
+Release:	1
 Summary:	PDF features across formats and engines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/navigator
