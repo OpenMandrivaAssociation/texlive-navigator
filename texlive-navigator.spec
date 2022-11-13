@@ -1,18 +1,12 @@
-# revision 29067
-# category Package
-# catalog-ctan /macros/generic/navigator
-# catalog-date 2012-11-14 17:56:09 +0100
-# catalog-license lppl
-# catalog-version 1.0
 Name:		texlive-navigator
-Version:	1.1
-Release:	3
+Version:	41413
+Release:	1
 Summary:	PDF features across formats and engines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/navigator
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/navigator.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/navigator.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/navigator.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/navigator.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ and - Commands to create and use raw PDF objects. Navigator
 requires texapi and yax, both version at least 1.03.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,7 +41,7 @@ requires texapi and yax, both version at least 1.03.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
