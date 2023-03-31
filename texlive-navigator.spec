@@ -1,6 +1,6 @@
 Name:		texlive-navigator
 Version:	41413
-Release:	1
+Release:	2
 Summary:	PDF features across formats and engines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/navigator
