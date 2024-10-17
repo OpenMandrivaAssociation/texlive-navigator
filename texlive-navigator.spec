@@ -3,7 +3,7 @@ Version:	41413
 Release:	2
 Summary:	PDF features across formats and engines
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/navigator
+URL:		https://www.ctan.org/tex-archive/macros/generic/navigator
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/navigator.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/navigator.doc.r%{version}.tar.xz
